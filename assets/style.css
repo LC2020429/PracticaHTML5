@@ -12,7 +12,7 @@ body{
     margin-top: 1px;
 }
 nav ul{
-    list-style: none;
+    list-style: none;   
     text-decoration: 1x;
 }
 nav  ul li{
@@ -82,3 +82,7 @@ header{
     height: 300px;
     width: 200px;
 }
+div{
+    
+}
+
