@@ -1,85 +1,134 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-header {
-    background-color: #f21f26;
-}
-.encabezadoLogo{
+  }
+  
+  body {
+    background-color: #0ed8d8;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: flex;              /* Habilita flexbox */
+    flex-direction: column;     /* Ordena los elementos verticalmente */
+    justify-content: center;    /* Centra el contenido verticalmente */
+    align-items: center;        /* Centra el contenido horizontalmente */
+    box-sizing: border-box;
+  }
+  
+  header,
+  section,
+  footer {
+    width: 100%;                /* Se adapta al ancho de la pantalla */
+    max-width: 1200px;          /* Limita el ancho máximo */
+  }
+  
+  header {
+    background-color: #20162f;
+    color: #c8f1ff;
+  }
+  
+  .encabezadoLogo {
+    margin-left: 50px;
     display: flex;
     align-items: center;
-}
-.nombreCarrera{
+  }
+  
+  .nombreCarrera {
     margin: 5px;
-}
-
-.enlaces {
-    background-color: #251819;
+    margin-left: 25px;
+    text-align: left;
+  }
+  
+  .enlaces {
+    border: 2px solid black;
+    background-color: #f480ed;
     padding: 10px;
-}
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     text-decoration: 1x;
-}
-nav ul li {
-    margin-right: 20px;
+    margin-left: 25px;
+  }
+  
+  nav ul li {
+    margin-right: 60px;
     display: inline;
-}
-nav a {
+  }
+  
+  nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-}
-/* Fin Encabezado */
-
-body{
-    background-color: #c6d6d6;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #181a25;    
-}
-/* Seccion sobre mi*/
-
-#Sobre-Mi img{
+  }
+  
+  /* Secciones */
+  section {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Sección sobre mí */
+  .sobreMi {
+    background-color: #C8F1FF;
+    height: auto;
+    padding: 20px;
+  }
+  #Sobre-Mi h2{
+    font-size: 300%;
+  }
+  
+  #Sobre-Mi img {
     display: block;
-    align-self: start;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 10px auto;
     height: 300px;
     width: 200px;
-}
-.contenedorImagen{
+  }
+  #Sobre-Mi p{
+    margin-left: 15px;
+  }
+  
+  .title {
+    margin: 10px;
+    text-align: center;
+    height: auto;
+  }
+  
+  .contenedorImagen {
     display: flex;
-}
-
-
-
-section{
-    margin: 15px;
-}
-form{
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 800px;
+  }
+  
+  /* Proyectos */
+  .Proyectos {
+    background-color: #f480ed;
+  }
+  
+  form {
     display: grid;
     grid-gap: 10px;
-    max-width: 40px;
+    max-width: 400px; /* Ajuste del formulario */
     margin: 0 auto;
-}
-
-form label{
+  }
+  
+  form label {
     display: block;
     margin-bottom: 5px;
-}
-
-form input, form textarea{
+  }
+  
+  form input,
+  form textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
     border: 2px solid #ccc;
-    min-width: 400px;
-    max-width: 400px;
-}
-
-form button{
+  }
+  
+  form button {
     background-color: rgb(4, 48, 112);
     color: white;
     border: none;
@@ -87,17 +136,14 @@ form button{
     border-radius: 5px;
     margin-bottom: 20px;
     height: 35px;
-}
-
-footer{
+  }
+  
+  footer {
     background-color: black;
     color: aqua;
     text-align: center;
     padding: 10px;
-    position:  fixed;
-    bottom: 0;
     width: 100%;
-}
-
-
-
+    max-width: 1200px;
+  }
+  
