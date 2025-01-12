@@ -74,19 +74,17 @@
       </div>
     </section>
 
-    <div class="Proyectos">
-      <section id="Proyectos">
-        <h2>Proyectos</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque,
-          mollitia voluptate atque, totam nostrum repellat corrupti illo soluta
-          perferendis ullam quisquam magnam quibusdam porro ad distinctio quos
-          consequatur modi tempora.
-        </p>
-      </section>
-    </div>
+    <section id="Proyectos">
+      <h2>Proyectos</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque,
+        mollitia voluptate atque, totam nostrum repellat corrupti illo soluta
+        perferendis ullam quisquam magnam quibusdam porro ad distinctio quos
+        consequatur modi tempora.
+      </p>
+    </section>
 
-    <section id="Musica">
+    <section id="Musica" class="Musica">
       <h2>Musica</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque,
@@ -94,13 +92,15 @@
         perferendis ullam quisquam magnam quibusdam porro ad distinctio quos
         consequatur modi tempora.
       </p>
-      <video width="640" height="360" controls>
-        <source src="./assets/musicVideo.mp4" type="video/mp4">
-        Tu navegador no soporta la etiqueta de video.
-    </video>
-
+      <div class="video-container">
+        <video width="640" height="360" controls>
+          <source src="./assets/musicVideo.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
     </section>
-    <section id="Contactos">
+
+    <section id="Contactos" class="contact">
       <h2>Contactanos</h2>
       <form>
         <label for="nombre"> Nombre: </label>
