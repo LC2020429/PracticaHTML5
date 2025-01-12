@@ -135,11 +135,37 @@ section {
 }
 /* Proyectos */
 #Proyectos {
-  padding: 20px; /* Asegúrate de que haya suficiente espacio interno */
-  background-color: #c8f1ff;
+  padding: 20px; 
   border: 2px solid black;
-  margin: 0 auto; /* Centra la sección dentro del contenedor */
-  max-width: 1200px; /* Asegúrate de que no exceda el ancho máximo */
+  background-color: #36a8ce;
+  margin: 0 auto; 
+  max-width: 1200px;
+}
+#Proyectos h2{
+  font-size: 200%;
+  margin-left: 2px;
+}
+.proyectos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.proyecto {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+/*codigo de poe */
+@media (min-width: 600px) {
+  .proyectos-container {
+      flex-direction: row;
+  }
+
+  .proyecto {
+      flex: 1;
+  }
 }
 /* Musica */
 .Musica {
