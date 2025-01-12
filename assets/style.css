@@ -141,7 +141,10 @@ section {
   margin: 0 auto; 
   max-width: 1200px;
 }
-#Proyectos h2{
+#Proyectos img {
+  max-width: 300px;
+}
+#Proyectos h2 {
   font-size: 200%;
   margin-left: 2px;
 }
@@ -150,21 +153,26 @@ section {
   flex-direction: column;
   gap: 20px;
 }
-
 .proyecto {
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 8px;
   background-color: #fff;
 }
-/*codigo de poe */
+
+/* Nueva clase para centrar imágenes */
+.imagen-container {
+  text-align: center; /* Centrar imágenes */
+}
+
+/* código de poe */
 @media (min-width: 600px) {
   .proyectos-container {
       flex-direction: row;
   }
-
   .proyecto {
       flex: 1;
+      background-color: rgb(255, 255, 218);
   }
 }
 /* Musica */
