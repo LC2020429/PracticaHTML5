@@ -1,88 +1,244 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #627aff;
-}
-.subtitle{
-    font-family: italy;
-    margin-top: 1px;
-}
-nav ul{
-    list-style: none;   
-    text-decoration: 1x;
-}
-nav  ul li{
-    margin-right: 20px;
-    display: inline;
-}
-nav a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-section{
-    margin: 15px;
-}
-form{
-    display: grid;
-    grid-gap: 10px;
-    max-width: 40px;
-    margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-form label{
-    display: block;
-    margin-bottom: 5px;
+body {
+  background-color: #0ed8d8;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  display: flex; /* Habilita flexbox */
+  flex-direction: column; /* Ordena los elementos verticalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  box-sizing: border-box;
 }
 
-form input, form textarea{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    border: 2px solid #ccc;
-    min-width: 400px;
-    max-width: 400px;
+header,
+section,
+footer {
+  width: 100%; /* Se adapta al ancho de la pantalla */
+  max-width: 1200px; /* Limita el ancho máximo */
 }
 
-form button{
-    background-color: rgb(4, 48, 112);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    height: 35px;
+header {
+  background-color: #20162f;
+  color: #c8f1ff;
 }
 
-footer{
-    background-color: black;
-    color: aqua;
-    text-align: center;
-    padding: 10px;
-    position:  fixed;
-    bottom: 0;
-    width: 100%;
+.encabezadoLogo {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
 }
 
-header{
-    background-color: black;
-    text-align: center;
+.nombreCarrera {
+  margin: 5px;
+  margin-left: 25px;
+  text-align: left;
 }
 
-#Sobre-Mi img{
-    display: block;
-    align-self: start;
-    margin-left: 10px;
-    margin-top: 10px;
-    height: 300px;
-    width: 200px;
-}
-div{
-    
+.enlaces {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  background-color: #f480ed;
+  padding: 10px;
 }
 
+nav ul {
+  list-style: none;
+  text-decoration: 1x;
+  margin-left: 25px;
+}
+
+nav ul li {
+  margin-right: 60px;
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Secciones */
+section {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Sección sobre mí */  
+.sobreMi {
+  background-color: #c8f1ff;
+  height: auto;
+  padding: 20px;
+  border: 2px solid black;
+}
+#Sobre-Mi h2 {
+  font-size: 300%;
+}
+
+#Sobre-Mi img {
+  display: block;
+  margin: 10px auto;
+  height: 300px;
+  width: 200px;
+}
+#Sobre-Mi p {
+  margin-left: 15px;
+}
+
+.title {
+  margin: 10px;
+  text-align: center;
+  height: auto;
+}
+
+.contenedorImagen {
+  display: flex;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 800px;
+}
+/*Habilidades*/
+.habilidades {
+  padding: 25px;
+  background-color: #ffffff;
+  height: 300px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.headHabilidad {
+  border: 1px solid #c8f1ff;
+  background-color: #c8f1ff;
+  width: 250px;
+  border-radius: 50px;
+}
+.habilidades-contenedor {
+  margin: 10px;
+  display: flex;
+  width: 1050px;
+}
+#Habilidades h2 {
+  font-size: 200%;
+  margin-left: 25px;
+}
+#Habilidades img {
+  display: block;
+  margin: 10px auto;
+  margin-right: 25px;
+  height: 200px;
+  width: 250px;
+}
+/* Proyectos */
+#Proyectos {
+  padding: 20px; 
+  border: 2px solid black;
+  background-color: #36a8ce;
+  margin: 0 auto; 
+  max-width: 1200px;
+}
+#Proyectos img {
+  max-width: 300px;
+}
+#Proyectos h2 {
+  font-size: 200%;
+  margin-left: 2px;
+}
+.proyectos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.proyecto {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Nueva clase para centrar imágenes */
+.imagen-container {
+  text-align: center; /* Centrar imágenes */
+}
+
+/* código de poe */
+@media (min-width: 600px) {
+  .proyectos-container {
+      flex-direction: row;
+  }
+  .proyecto {
+      flex: 1;
+      background-color: rgb(255, 255, 218);
+  }
+}
+/* Musica */
+.Musica {
+  background-color: #20162F;
+  padding: 20px; /* Espaciado opcional */
+}
+#Musica h2{
+  color: white;
+}
+#Musica p{
+  color: white;
+}
+
+.video-container {
+  display: flex; /* Activa flexbox solo para el contenedor del video */
+  justify-content: center; /* Centra el video horizontalmente */
+  margin-top: 20px; /* Espaciado opcional entre el texto y el video */
+}
+
+#Musica video {
+  border-radius: 5px;
+  max-width: 100%; /* Asegura que el video no exceda el ancho de la pantalla */
+  height: auto; /* Mantiene la proporción del video */
+}
+/*contact us*/
+.contact{
+  background-color: #f480ed;
+  border: 2PX solid black;
+}
+form {
+  display: grid;
+  grid-gap: 10px;
+  max-width: 400px; /* Ajuste del formulario */
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 2px solid #20162f;
+}
+
+form button {
+  background-color: rgb(4, 48, 112);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 35px;
+}
+
+footer {
+  background-color: black;
+  color: aqua;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 1200px;
+}
